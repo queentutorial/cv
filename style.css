@@ -1,20 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
 header {
     text-align: center;
     background-color: #333;
     color: white;
     padding: 20px;
+    animation: fadeIn 2s ease-in;
 }
-section {
-    margin: 20px 0;
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ddd;
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.skills {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
 }
